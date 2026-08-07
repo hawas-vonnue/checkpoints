@@ -1,0 +1,58 @@
+[
+    {
+        "id": "t1",
+        "title": "Set up dev environment",
+        "assignee": "Ananya",
+        "priority": "high",
+        "column": "done"
+    },
+    {
+        "id": "t2",
+        "title": "Build portfolio HTML structure",
+        "assignee": "Rahul",
+        "priority": "medium",
+        "column": "done"
+    },
+    {
+        "id": "t3",
+        "title": "Style portfolio with Flexbox",
+        "assignee": "Priya",
+        "priority": "medium",
+        "column": "in-progress"
+    },
+    {
+        "id": "t4",
+        "title": "Wire dark mode toggle",
+        "assignee": "Ananya",
+        "priority": "low",
+        "column": "in-progress"
+    },
+    {
+        "id": "t5",
+        "title": "Write FormValidator class",
+        "assignee": "Karan",
+        "priority": "high",
+        "column": "todo"
+    },
+    {
+        "id": "t6",
+        "title": "Add Jest tests for utils",
+        "assignee": "Priya",
+        "priority": "medium",
+        "column": "todo"
+    },
+    {
+        "id": "t7",
+        "title": "Deploy to GitHub Pages",
+        "assignee": "Rahul",
+        "priority": "low",
+        "column": "todo"
+    },
+    {
+        "id": "t8",
+        "title": "Fix lightbox keyboard navigation",
+        "assignee": "Karan",
+        "priority": "high",
+        "column": "todo"
+    }
+]

@@ -1,7 +1,7 @@
-function createRateLimiter(fn, maxCalls, windowMs) {
+function createRateLimiter(fn: Function, maxCalls: number, windowMs: number) {
     let count = 0;
-    let lastCalled;
-    return function (...args) {
+    let lastCalled: number;
+    return function (...args: unknown[]) {
         if (Date.now() - lastCalled < windowMs) {
             count++;
             if (count === maxCalls) throw new Error("Rate limit exceeded");
@@ -15,12 +15,12 @@ function createRateLimiter(fn, maxCalls, windowMs) {
     };
 }
 
-const limited = createRateLimiter((x) => x * 2, 1, 1000);
+const limited = createRateLimiter((x: number) => x * 2, 2, 1000);
 
 console.log(limited(1));
 console.log(limited(2));
-console.log(limited(3));
+setTimeout(() => {
+    console.log(limited(3));
+}, 1000);
 
-modules.export = {
-    createRateLimiter,
-};
+export default { createRateLimiter };
